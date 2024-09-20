@@ -1,0 +1,18 @@
+/* src/components/PageNotFound.css */
+.page-not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.page-not-found-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-not-found-text {
+  margin-top: 20px;
+  text-align: center;
+}

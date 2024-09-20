@@ -1,0 +1,42 @@
+/* General Footer Styles */
+.footer {
+  background-color: #202A44; /* Updated background color */
+  color: #f8f9fa;
+}
+
+.footer-heading {
+  font-size: 1.55rem;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
+.address {
+  font-size: 0.875rem;
+  color: #f8f9fa;
+}
+
+.links.github, .links.linkedin, .links.instagram {
+  font-size: 1.5rem; /* Increased font size for larger logo links */
+  margin-right: 1.5rem; /* Increased margin for spacing */
+  color: #f8f9fa;
+}
+
+.links.github:hover, .links.linkedin:hover, .links.instagram:hover {
+  color: #007bff;
+}
+
+.d-flex {
+  align-items: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid #f8f9fa;
+  padding-top: 0.1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #f8f9fa;
+}

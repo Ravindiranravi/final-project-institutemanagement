@@ -1,0 +1,278 @@
+/* Hero Section */
+.hero-section {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .hero-section .display-4 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.25rem;
+  }
+  
+  .hero-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* About Us Section */
+.about-us {
+    padding: 10px 0; /* Reduce padding to decrease space */
+  }
+  
+  
+  .about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1.125rem;
+  }
+  
+  .about-us .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+
+  
+  /* Popular Courses Section */
+.popular-courses {
+    padding: 10px 0; /* Reduce padding to decrease space */
+  }
+  
+  
+  .popular-courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+
+  
+ /* Testimonials Section */
+.testimonials {
+    padding:1px ; /* Reduce padding to decrease space */
+  }
+  
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  blockquote {
+    background: #f8f9fa;
+    border-left: 0.25rem solid #007bff;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+  }
+  
+  .blockquote-footer {
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+
+  
+  /* Call to Action Section */
+  .cta {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 0;
+  }
+  
+  .cta .display-4 {
+    color:whitesmoke;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta .lead {
+    font-size: 1.25rem;
+  }
+  
+  .cta .btn-light {
+    background-color: #f8f9fa;
+    color: #007bff;
+    border-color: #007bff;
+  }
+
+
+
+
+  /* Carousel Section */
+.carousel {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px; /* Adjust this value to reduce space */
+    height: 500px; /* Set the desired height */
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  .carousel-inner {
+    height: 100%; /* Make sure the inner container uses the full height */
+  }
+  
+  .carousel-item {
+    height: 100%; /* Make sure each item uses the full height */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%; /* Adjust image height to fit the container */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+  }
+  .carousel-caption h1 {
+    color: white !important;
+  }
+  
+
+  
+/* Set maximum modal width and center it */
+.custom-modal-width .modal-dialog {
+  max-width: 100%; /* Allows modal to take up the full width of the screen */
+  width: 1200px; /* Fallback width for larger screens */
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Modal Header Styling */
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: none;
+  padding: 20px 30px;
+}
+
+/* Header close button styling */
+.modal-header .close {
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Title styling inside modal */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+/* Modal Body Styling */
+.modal-body {
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+/* Heading Styling */
+.modal-body h5 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #343a40;
+}
+
+/* Text Styling */
+.modal-body p {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Responsive image styling */
+.modal-body img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Footer Styling */
+.modal-footer {
+  padding: 20px;
+  justify-content: center;
+  background-color: #007bff;
+}
+
+/* Button Styling */
+.modal-footer .btn, .modal-header .btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn:hover, .modal-header .btn:hover {
+  background-color: #062b47;
+}
+
+/* Custom Modal Close Button */
+.modal-footer .btn-close {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Small Screens Responsiveness */
+@media (max-width: 600px) {
+  .custom-modal-width .modal-dialog {
+      width: 100%; /* Take full width on mobile */
+      margin: 10px;
+  }
+  
+  .modal-body {
+      padding: 15px;
+  }
+  
+  .modal-body h5 {
+      font-size: 18px;
+  }
+
+  .modal-body p {
+      font-size: 14px;
+  }
+
+  .modal-body img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

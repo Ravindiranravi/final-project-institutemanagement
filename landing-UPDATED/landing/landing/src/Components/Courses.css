@@ -1,0 +1,212 @@
+.total-courses {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .title-courses {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a2a72;
+    margin-bottom: 40px;
+  }
+  
+  .courses-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .course-card {
+    background: linear-gradient(135deg, white, hsl(212, 78%, 52%)); /* Gradient with white and blue */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-logos {
+    width: 150px;
+    height: auto;
+  }
+  
+  .course-logos:hover {
+    transform: scale(1.1);
+  }
+  
+  .course-info {
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .courses-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .course-logos {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .courses-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .course-logos {
+      width: 100px;
+    }
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    margin-top: 50px;
+    text-align: left;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+    color: #2a2a72;
+    margin-bottom: 20px;
+  }
+  
+  .faq-card {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-card:hover {
+    background-color: #eef2ff;
+  }
+  
+  .faq-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a2a72;
+  }
+  
+  .faq-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Newsletter Section */
+  .newsletter {
+    margin-top: 50px;
+    background-color: hsl(212, 78%, 52%);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .newsletter h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    color: hsl(212, 78%, 52%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #fff;
+    color: #0fcab4;
+  }
+  
+
+  /* Default popup style */
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #4caf50; /* Green for success by default */
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+/* Specific color for Invalid Email Format */
+.invalid-email {
+  background-color: #ff6347; /* Tomato red */
+}
+
+/* Specific color for Already Subscribed */
+.already-subscribed {
+  background-color: #ffa500; /* Orange */
+}
+
+/* Animation for fade in and out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .courses-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course-card {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+
+  .faq-card, .newsletter {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .courses-section {
+    display: block;
+  }
+
+  .course-card {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header Top */
+.header-top {
+  background-color: #202A44; /* Background color for the top part of the header */
+  color: white; /* Text color for the header */
+}
+
+/* Navbar Styles */
+.header-top .navbar-brand {
+  font-size: 24px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.header-top .header-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top .nav-link {
+  color: white; /* Default color for all nav links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem 1rem; /* Add some padding for better spacing */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  border-radius: 0.75rem; 
+  
+}
+
+.header-top .nav-link.active,
+.header-top .nav-link:hover {
+  color: #007bff; /* Primary color on hover */
+  background-color: #007bff; /* Optional: light background for hover effect */
+}
+
+/* Responsive Navbar */
+@media (max-width: 650px) {
+  #navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background: #202A44;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 0.3px solid hsl(0deg 43.17% 35.88%);
+  }
+
+
+  #navbar.menu {
+    display: flex;
+  }
+
+  li {
+    margin: 15px 0;
+  }
+
+  #mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 250px) {
+  #logo {
+    font-size: 16px;
+  }
+}
+
+/* Additional Styles */
+.header-top .text-end {
+  text-align: end;
+}
+
+.header-top .text-end .btn {
+  margin-left: 0.5rem; /* Spacing between buttons */
+}
+
+.header-top .form-control {
+  border-radius: 0.25rem;
+}
+
+.navbar-logo {
+  border-radius: 50%;
+  height: 60px; /* Adjust as needed */
+  width: 75px;
+}
+
+.quantum-title {
+  color : black;
+  font-size: 33px; /* Adjust size based on your requirement */
+  font-weight: bold;
+  font-family: 'Lobster', cursive; /* This will give the text a curly style */
+}

@@ -1,0 +1,93 @@
+/* about.css */
+
+.home-contents.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.about-container {
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.institute-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2a2a72;
+}
+
+.designation {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.deve-color {
+  color: #ff6347;
+}
+
+.mission-statement {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.media-links {
+  margin-top: 30px;
+}
+
+.media-links a {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contacts {
+  background-color: #2a2a72;
+  color: white;
+}
+
+.contacts:hover {
+  background-color: #1d1d5a;
+}
+
+.brochure {
+  background-color: #ff6347;
+  color: white;
+}
+
+.brochure:hover {
+  background-color: #e55337;
+}
+
+.imgdiv {
+  flex-shrink: 0;
+}
+
+.institute-logo {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-contents.about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .institute-logo {
+    max-width: 200px;
+  }
+}

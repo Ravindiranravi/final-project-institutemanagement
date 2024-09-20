@@ -1,0 +1,200 @@
+/* Basic styling for the projects section */
+.projects-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Container for projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project Image Styling */
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Project Info Styling */
+.project-info {
+  padding: 15px;
+  flex-grow: 1; /* Allows the info section to take up remaining space */
+}
+
+/* Title and Description Styling */
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Status and Duration Styling */
+.project-status,
+.project-duration {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Status Color Coding */
+.status-planning {
+  color: #007bff; /* Blue color */
+}
+
+.status-in-progress {
+  color: #ffc107; /* Yellow color */
+}
+
+.status-completed {
+  color: #28a745; /* Green color */
+}
+
+/* Technologies List Styling */
+.project-technologies {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.tech-item {
+  display: inline-block;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin: 2px;
+}
+
+/* Hover Effect: More Info */
+.project-more-info {
+  margin-top: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .project-more-info {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* Links Styling */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+  margin-top: 50px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .search-bar {
+    font-size: 1em;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+  }
+
+  .project-description {
+    font-size: 0.9em;
+  }
+
+  .testimonial p {
+    font-size: 1em;
+  }
+
+  .testimonial h4 {
+    font-size: 1em;
+  }
+}
